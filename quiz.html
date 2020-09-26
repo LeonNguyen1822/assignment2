@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tag include title and author -->
+    <meta charset="utf-8">
+    <meta name="description" content="Assignment 1">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Nguyen Huong Thu">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Practice Quiz</title>
+    <link rel="icon" type="image/jpg" href="images/icon.jpg">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/quiz.js"></script>
+</head>
+
+<body>
+    <header id="head">
+        <!-- Logo of Website -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <!-- Main menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOMEPAGE</a></li>
+                <li><a href="topic.html">DESCRIPTION</a></li>
+                <li><a href="quiz.html">PRACTICE QUIZ</a></li>
+                <li><a href="enhancements.html">ENHANCEMENTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Image banner  -->
+    <div id="banner">
+        <h1 id="text_banner">USER AGENTS</h1>
+    </div>
+
+    <main>
+        <!-- Quiz form start here -->
+        <h2 id="main_text">Practice Quiz</h2>
+        <form id="quiz"  action="result.html" method="post" novalidate="novalidate">
+            <fieldset>
+                <legend>Student Details</legend>
+                <p id="name">
+                    <!-- input type text for student details -->
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" required="required" pattern="[a-​zA-Z]+"
+                        maxlength="25">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" required="required" pattern="[a-zA-Z]+"
+                        maxlength="25">
+                </p>
+                <!-- number input for student ID -->
+                <p id="stuid"> 
+                    <label for="studentid">Student ID</label>
+                    <input type="text" name="studentid" id="studentid" required="required" pattern="(\d{7}|\d{10})">
+                </p>
+            </fieldset>
+            <fieldset>
+                <h3>Answer question below:</h3>
+                <!-- question 1 with text input question -->
+                <p class="ques1">
+                    <label for="question1">1. What is User Agents?</label>
+                    <input type="text" name="answer1" id="question1" required="required"
+                        placeholder="Please write your answer here...">
+                </p>
+                <!-- question 2 with multiple choice question (radio button) with one corect answer -->
+                <p class="ques2_1">2. Purpose of User Agents?</p>
+                <p class="ques2">
+                    <label for="answ1">
+                        <input type="radio" id="answ1" name="answer2" value="link the website">
+                        It's the one that links the website and used for TCP/IP
+                    </label>
+                </p>
+                <p class="ques2">
+                    <label for="answ2">
+                        <input type="radio" id="answ2" name="answer2" value="an application"> It just an application
+                    </label>
+                </p>
+                <p class="ques2">
+                    <label for="answ3">
+                        <input type="radio" id="answ3" name="answer2" value="doesn't have any purpose"> Doesn't have any
+                        purpose
+                    </label>
+                </p>
+                <!-- question 3 with multiple correct answer (checkbox group) -->
+                <p class="ques3_1">3. What are the different type of Web Browser?</p>
+                <p class="ques3">
+                    <label for="answ4">
+                        <input type="checkbox" name="answer3[]" id="answ4" value="Mosaic"> Mosaic
+                    </label>
+                    <label for="answ5">
+                        <input type="checkbox" name="answer3[]" id="answ5" value="Netscape"> Netscape
+                    </label>
+                    <label for="answ6">
+                        <input type="checkbox" name="answer3[]" id="answ6" value="Internet Explorer"> Internet Explorer
+                    </label>
+                    <label for="answ7">
+                        <input type="checkbox" name="answer3[]" id="answ7" value="Skype"> Skype
+                    </label>
+                </p>
+                <!-- question 4 with drop list with single correct answer -->
+                <p class="ques4">
+                    <label for="answ8">4. What is user agent string of Chrome?</label>
+                    <select name="answer4" id="answ8" required="required">
+                        <option value="">Please select</option>
+                        <option value="Mozilla/5.0(Windows)">Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US)</option>
+                        <option value="Mozilla/5.0(Macintosh)">Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de)</option>
+                        <option value="NCSA_Mosaic/2.0">NCSA_Mosaic/2.0</option>
+                        <option value="Mozilla/1.0.">Mozilla/1.0</option>
+                    </select>
+                </p>
+                <!-- question 5 with text input and required number -->
+                <!-- <p class="ques5">
+                    <label for="answ9">5. When was the first web browser invented?
+                        <input type="text" name="answer5" id="answ9" required="required"
+                            pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" placeholder="dd/mm/yyyy">
+                    </label>
+                </p> -->
+                <!-- question 6 with text input include an essay -->
+                <p class="ques6">
+                    <label for="answ10">5. Write an essay (at least 100 words) about how do you thing user agents will be
+                        in the future?</label>
+                    <br />
+                    <textarea name="answer6" id="answ10" cols="65" rows="4" value="some thing increadible in the future" required="required"
+                        placeholder="Please write your answer here ..."></textarea>
+                </p>
+
+            </fieldset>
+            <!-- button to submit or reset form  -->
+            <input id="button1" type="submit" value="Submit" />
+            <input id="button2" type="reset" value="Reset Form" />
+        </form>
+        <!-- back to top button  -->
+        <a class="btn" href="#head">Back to Top</a>
+
+    </main>
+    <!-- footer have student name and student email -->
+    <footer>
+        <div id="copy_right">
+            <p>&#169; 2020 Thu Nguyen</p>
+        </div>
+        <div id="email">
+            <a href="mailto:103139729@student.swin.edu.au">Send email to Creator: Nguyen Huong Thu</a>
+        </div>
+    </footer>
+</body>
+
+</html>

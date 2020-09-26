@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tag include title and author -->
+    <meta charset="utf-8">
+    <meta name="description" content="Assignment 1">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Nguyen Huong Thu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1">
+    <title>Description</title>
+    <link rel="icon" type="image/jpg" href="images/icon.jpg">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header id="head">
+        <!-- Logo of Website -->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <!-- Main menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">HOMEPAGE</a></li>
+                <li><a href="topic.html">DESCRIPTION</a></li>
+                <li><a href="quiz.html">PRACTICE QUIZ</a></li>
+                <li><a href="enhancements.html">ENHANCEMENTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Image banner  -->
+    <div id="banner">
+        <h1 id="text_banner">USER AGENTS</h1>
+    </div>
+
+    <main>
+        <!-- aside navbar to find the information more easily -->
+        <aside>
+            <ul>
+                <li><a href="#def">What is User Agent?</a></li>
+                <li><a href="#purpose">User Agent's purpose</a></li>
+                <li><a href="#history">History of User Agent</a></li>
+                <li><a href="#table">Table of Web browser using User agent string</a></li>
+                <li><a href="#video">Video about User Agent</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+        <section class="info">
+            <!-- infomation about user agent -->
+            <h2 class="heading2"><a id="def"> What is User Agent?</a></h2>
+            <p class="info_text">
+                User agent is not a person. User agent is a software (also called a software agent) that operates on
+                behalf of a user, such as web browser the “retrieves, renders and encourages the interaction of
+                end-users with the Web content
+            </p>
+            <h2 class="heading2"> <a id="purpose">User Agent's purpose</a> </h2>
+            <p class="info_text">
+                As an application, it is used for one of the TCP / IP networking protocols — specifically, it is the one
+                that links the website you are trying to access. "User agent" refers to a program that accesses another
+                device remotely, normally a server, through the network
+            </p>
+            <h2 class="heading2"><a id="history">History of User Agent</a> </h2>
+            <ol>
+                <li>The first web browser, Mosaic, was released in 1993 by the National Center for Supercomputing
+                    Applications (NCSA). User agent it uses is NCSA_Mosaic/2.0. After that, Mozilla browser was invented
+                    (it has an originally named Netscape than renamed to Firefox). At first, Mozilla used a user agent
+                    Mozilla/1.0.</li>
+                <li>After Netscape was presented, Microsoft also invented Internet Explorer and they hoped that it would
+                    be ‘Netscape Killer’. And as expected, Internet Explorer emerged, overtaking and beating the
+                    Netscape. But then Netscape was reborn as Mozilla. Mozilla developed Genko, using the user agent
+                    Mozilla/5.0</li>
+                <li>Linux also develops the KHTML engine but is not well supported as Gecko, so they added the user
+                    agent Mozilla/5.0 (compatible; Konqueror / 3.2; FreeBSD) (KHTML, like Gecko) string and developed it
+                    to be compatible with frame of Gecko.</li>
+                <li>Apple developed another web browser called Safari. They named their engine WebKit. Used Mozilla/5.0
+                    (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/85.7 (KHTML, like Gecko) Safari/85.5</li>
+                <li>After all, Google invented Chrome. Chrome used user agent Mozilla/5.0 (Windows; U; Windows NT 5.1;
+                    en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13.a</li>
+            </ol>
+            <!-- image example about user agent -->
+            <img id="web_browser" src="images/icon.jpg" alt="webbrowser">
+            <p id="img_text">Some example Web Browser using User Agent String</p>
+            <h2 class="heading2"><a id="table">Table of Web browser using User agent string</a></h2>
+            <!-- table with information data -->
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Year invented</th>
+                    <th>Creator</th>
+                    <th>User Agent string</th>
+                </tr>
+                <tr>
+                    <td>Chrome</td>
+                    <td>1998</td>
+                    <td>Larry Page and Sergey Brin</td>
+                    <td>Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko)
+                        Chrome/0.2.149.27 Safari/525.13.a</td>
+                </tr>
+                <tr>
+                    <td>Internet Explorer</td>
+                    <td>16/08/2995</td>
+                    <td>Thomas Reardon</td>
+                    <td>Mozilla/5.0 (Windows NT 10.0; Trident/7.0; rv:11.0) like Gecko</td>
+                </tr>
+                <tr>
+                    <td>Safari</td>
+                    <td>07/11/2003</td>
+                    <td>Apple</td>
+                    <td>Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/85.7 (KHTML, like Gecko) Safari/85.5
+                    </td>
+                </tr>
+                <tr>
+                    <td>Firefox</td>
+                    <td>09/11/2004</td>
+                    <td>Dave Hyatt and Blake Ross</td>
+                    <td>Mozilla/5.0 (compatible; Konqueror / 3.2; FreeBSD) (KHTML, like Gecko) </td>
+                </tr>
+                <tr>
+                    <td>Netscape</td>
+                    <td>1994</td>
+                    <td>Marc Andreessen and Jim Clark</td>
+                    <td>Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.4) Gecko/20030624 Netscape/7.1 (ax)</td>
+                </tr>
+                <tr>
+                    <td>Gecko</td>
+                    <td>15/07/2003</td>
+                    <td>James H. Clark</td>
+                    <td>WikiBrowser/1.0 Gecko/1.0.</td>
+                </tr>
+            </table>
+            <h2 class="heading2">Video about User Agent</h2>
+            <!-- video about user agent  -->
+            <video id="video" controls autoplay> 
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+            <p id="source">Source: Youtube</p>
+            <!-- a list References -->
+            <h2 class="heading2">References</h2>
+            <ul id="ref">
+                <li>https://en.wikipedia.org/wiki/User_agent</li>
+                <li>https://humanwhocodes.com/blog/2010/01/12/history-of-the-user-agent-string/</li>
+                <li>https://webaim.org/blog/user-agent-string-history/</li>
+                <li>https://www.whatismybrowser.com/</li>
+                <li>https://www.youtube.com/watch?v=oJ6MBvzgPcQ&feature=emb_title</li>
+
+            </ul>
+        </section>
+        <!-- back to top button  -->
+        <a class="btn" href="#head">Back to Top</a>
+    </main>
+
+    <!-- footer have student name and student email -->
+    <footer>
+        <div id="copy_right">
+            <p>&#169; 2020 Thu Nguyen</p>
+        </div>
+        <div id="email">
+            <a href="mailto:103139729@student.swin.edu.au">Send email to Creator: Nguyen Huong Thu</a>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
